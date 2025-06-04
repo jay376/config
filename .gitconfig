@@ -1,15 +1,28 @@
 [user]
-	email = zhangfangjie@meituan.com
-	name = zhangfangjie
+	email = zhangfanjige@hashdata.com
+	name = Fangjie Zhang
+# [url "ssh://gitlab@git.garena.com:2222/shopee/platform/trace.git"]
+# 	insteadOf = https://git.garena.com/shopee/platform/trace.git
+# [url "ssh://gitlab@git.garena.com:2222/shopee/platform/splog.git"]
+# 	insteadOf = https://git.garena.com/shopee/platform/splog.git
+# [url "ssh://gitlab@git.garena.com:2222/shopee/platform/golang_splib.git"]
+# 	insteadOf = https://git.garena.com/shopee/golang_splib.git
+
 [alias]
 	co = checkout
 	br = branch
 	ci = commit
 	st = status
-	last = log -1 HEAD
+	la = log -1 HEAD
 	visual = gitk
 	amend = commit --amend -C HEAD
+        dc  = diff --cached
+        au = add -u
+        pl = pull origin
+        pu = push origin
+        fe =  origin
 	ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green) [%cn]' --decorate --date=short
+        bdm = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
 [color]
 	diff = auto
 	status = auto
@@ -18,3 +31,9 @@
 	tool = kdiff3
 [meregtool "kdiff3"]
 	path = /usr/bin/kdiff3
+[url "ssh://git@code.hashdata.xyz"]
+	insteadOf = https://code.hashdata.xyz
+[core]
+	editor = emacs -nw
+# [url "ssh://xjbdjay@github.com/"]
+#        insteadOf = https://github.com/
