@@ -89,5 +89,4 @@ alias rdev="ssh  -A  10.13.9.14 -p22"
 alias dev="ssh  -A  10.13.8.101 -p2222 -t  \" tmux a -t fj \""
 
 alias fdb='ssh  -R 1080::1080  root@192.168.48.63'
-export HOMEBREW_GITHUB_API_TOKEN=REDACTED
 . "$HOME/.cargo/env"
